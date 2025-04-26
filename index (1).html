@@ -1,0 +1,968 @@
+<!DOCTYPE html><html data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="vertical" dir="ltr" lang="en"><head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- Favicon icon-->
+  <link href="images/QdMMq6F.png" rel="shortcut icon" type="image/png">
+  <!-- Core Css -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- jvectormap  -->
+  <link href="css/jquery-jvectormap.css" rel="stylesheet">
+  <script src="js/sweetalert2.all.js"></script>
+ </head>
+ <body>
+  <!-- Preloader -->
+  <!-- <div class="preloader">
+   <img alt="LongHip12" class="lds-ripple img-fluid" src=""/>
+  </div> -->
+  <div id="main-wrapper">
+   <!-- Sidebar Start -->
+   <aside class="left-sidebar with-vertical">
+    <div class="brand-logo d-flex align-items-center justify-content-between">
+     <a class="text-nowrap logo-img" href="/">
+      <img alt="Logo" width="100px" class="dark-logo" src="images/QwyEq0J.gif">
+      <img alt="Logo" width="100px" class="light-logo" src="images/QwyEq0J.gif">
+     </a>
+     <a class="sidebartoggler ms-auto text-decoration-none fs-5 d-block d-xl-none" href="javascript:void(0)">
+<iconify-icon class="fs-6" icon="material-symbols-light:close"></iconify-icon>
+      
+     </a>
+    </div>
+      <div class="scroll-sidebar" data-simplebar="">
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav">
+          <ul id="sidebarnav" class="mb-0">
+            <li class="nav-small-cap">
+              <iconify-icon icon="solar:menu-dots-bold-duotone" class="nav-small-cap-icon fs-5"></iconify-icon>
+              <span class="hide-menu">Home</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link sidebar-link primary-hover-bg" href="https://longhip2012.github.io/SourceRoblox" aria-expanded="false">
+                <span class="aside-icon p-2 bg-primary-subtle rounded-1">
+                  <iconify-icon icon="solar:screencast-2-line-duotone" class="fs-6"></iconify-icon>
+                </span>
+                <span class="hide-menu ps-1">Trang Chủ</span>
+              </a>
+            </li>
+            
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow danger-hover-bg" href="javascript:void(0)" aria-expanded="false">
+                <span class="aside-icon p-2 bg-danger-subtle rounded-1">
+                  <iconify-icon icon="tabler:source-code" class="fs-6"></iconify-icon>
+                </span>
+                <span class="hide-menu ps-1">Mã Nguồn</span>
+              </a>
+              <ul aria-expanded="false" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="https://longhip2012.github.io/source-code" class="sidebar-link">
+                    <span class="sidebar-icon"></span>
+                    <span class="hide-menu">Kho Mã Nguồn</span>
+                  </a>
+                </li>
+            
+            
+            
+
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      
+    <div class="fixed-profile mx-3 mt-3">
+     <div class="card bg-primary-subtle mb-0 shadow-none">
+      <div class="card-body p-4">
+       <div class="d-flex align-items-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3">
+         <img alt="spike-img" class="img-fluid rounded-circle" height="45" src="images/user-1.jpg" width="45">
+                  <div>
+          <h5 class="mb-0">Bạn</h5>
+          <p class="fs-3 lh-base mb-0 profile-subtext">
+                 </p></div>
+        
+       </div>
+      </div>
+     </div>
+    </div>
+   </div></aside>
+   <!--  Sidebar End -->
+   
+   <div class="page-wrapper">
+    <div class="body-wrapper">
+     <div class="container-fluid">
+      <!--  Header Start -->
+      <header class="topbar sticky-top">
+       <div class="with-vertical">
+        <nav class="navbar navbar-expand-lg p-0">
+         <ul class="navbar-nav">
+          <li class="nav-item nav-icon-hover-bg rounded-circle">
+           <a class="nav-link sidebartoggler" href="javascript:void(0)" id="headerCollapse">
+            <iconify-icon class="fs-7" icon="solar:list-bold-duotone">
+            </iconify-icon>
+           </a>
+          </li>
+         </ul>
+         <div class="d-block d-lg-none py-3">
+          <img alt="Logo" class="dark-logo" width="100px" src="images/QwyEq0J.gif">
+           <img alt="Logo" class="light-logo" width="100px" src="images/QwyEq0J.gif">
+           
+          
+         </div>
+         <a aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler p-0 border-0" data-bs-target="#navbarNav" data-bs-toggle="collapse" href="javascript:void(0)">
+          <span class="p-2">
+          <div class="bg-info-subtle p-6 me-3 rounded-circle d-flex align-items-center justify-content-center">
+              <iconify-icon class="fs-7 text-success" icon="marketeq:user-alert">
+              </iconify-icon>
+              </div>
+           
+          </span>
+         </a>
+         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div class="d-flex align-items-center justify-content-between">
+           <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-center">
+            <li class="nav-item dropdown nav-icon-hover-bg rounded-circle d-flex d-lg-none">
+             <a aria-expanded="false" class="nav-link position-relative" href="javascript:void(0)" id="drop3">
+              <iconify-icon class="fs-7" icon="solar:magnifer-linear">
+              </iconify-icon>
+             </a>
+             <div aria-labelledby="drop3" class="dropdown-menu content-dd dropdown-menu-end dropdown-menu-animate-up">
+              <!--  Search Bar -->
+              <div class="modal-header border-bottom p-3">
+               <input class="form-control fs-3" placeholder="Try to searching ..." type="search">
+              </div>
+             </div>
+            </li>
+            <li class="nav-item dropdown d-none d-lg-block">
+             <a aria-expanded="false" class="nav-link position-relative shadow-none" href="javascript:void(0)" id="drop3">
+              <form class="nav-link position-relative shadow-none">
+               <input class="form-control rounded-3 py-2 ps-5 text-dark" placeholder="Try to searching ..." type="text">
+              </form>
+             </a>
+             <div aria-labelledby="drop3" class="dropdown-menu content-dd dropdown-menu-end dropdown-menu-animate-up">
+              <div class="modal-header border-bottom p-3">
+               <input class="form-control fs-3" placeholder="Try to searching ..." type="search">
+               
+              </div>
+             </div>
+            </li>
+            <li class="nav-item dropdown nav-icon-hover-bg rounded-circle">
+             <a aria-expanded="false" class="nav-link position-relative" href="javascript:void(0)" id="drop2">
+              <iconify-icon class="fs-6" icon="solar:widget-add-line-duotone">
+              </iconify-icon>
+             </a>
+             <div aria-labelledby="drop2" class="dropdown-menu content-dd dropdown-menu-end dropdown-menu-animate-up">
+              <!--  Shortcuts -->
+              <div class="d-flex align-items-center py-3 px-7 gap-6">
+               <h3 class="mb-0 fs-5">
+                Shortcuts
+               </h3>
+              </div>
+              <div class="row gx-0">
+               <div class="col-6">
+                <a class="dropdown-item px-7 border-top border-bottom border-end py-6 d-flex flex-column gap-2 justify-content-center text-center" href="https://bootstrapdemos.wrappixel.com/spike/dist/main/app-invoice.html">
+                 <div class="bg-secondary-subtle rounded-3 m-auto round d-flex align-items-center justify-content-center">
+                  <iconify-icon class="fs-7 text-secondary" icon="solar:checklist-minimalistic-bold-duotone">
+                  </iconify-icon>
+                 </div>
+                 <h6 class="mb-0 fs-4">
+                  Invoice
+                 </h6>
+                 <span class="d-block text-body-color fs-3">
+                  Get latest invoice
+                 </span>
+                </a>
+               </div>
+               <div class="col-6">
+                <a class="dropdown-item px-7 border-top border-bottom py-6 d-flex flex-column gap-2 justify-content-center text-center" href="https://bootstrapdemos.wrappixel.com/spike/dist/main/app-chat.html">
+                 <div class="bg-primary-subtle rounded-3 m-auto round d-flex align-items-center justify-content-center">
+                  <iconify-icon class="fs-7 text-primary" icon="solar:chat-square-call-bold-duotone">
+                  </iconify-icon>
+                 </div>
+                 <h6 class="mb-0 fs-4">
+                  Chat
+                 </h6>
+                 <span class="d-block text-body-color fs-3">
+                  New messages
+                 </span>
+                </a>
+               </div>
+               <div class="col-6">
+                <a class="dropdown-item px-7 border-bottom border-end py-6 d-flex flex-column gap-2 justify-content-center text-center" href="https://bootstrapdemos.wrappixel.com/spike/dist/main/app-contact2.html">
+                 <div class="bg-info-subtle rounded-3 m-auto round d-flex align-items-center justify-content-center">
+                  <iconify-icon class="fs-7 text-info" icon="solar:phone-calling-rounded-bold-duotone">
+                  </iconify-icon>
+                 </div>
+                 <h6 class="mb-0 fs-4">
+                  Contact
+                 </h6>
+                 <span class="d-block text-body-color fs-3">
+                  2 Unsaved Contacts
+                 </span>
+                </a>
+               </div>
+               <div class="col-6">
+                <a class="dropdown-item px-7 border-bottom py-6 d-flex flex-column gap-2 justify-content-center text-center" href="https://bootstrapdemos.wrappixel.com/spike/dist/main/app-email.html">
+                 <div class="bg-danger-subtle rounded-3 m-auto round d-flex align-items-center justify-content-center">
+                  <iconify-icon class="fs-7 text-danger" icon="solar:mailbox-bold-duotone">
+                  </iconify-icon>
+                 </div>
+                 <h6 class="mb-0 fs-4">
+                  Emailx
+                 </h6>
+                 <span class="d-block text-body-color fs-3">
+                  Get new emails
+                 </span>
+                </a>
+               </div>
+               <div class="col-6">
+                <a class="dropdown-item px-7 border-end py-6 d-flex flex-column gap-2 justify-content-center text-center" href="https://bootstrapdemos.wrappixel.com/spike/dist/main/page-user-profile.html">
+                 <div class="bg-warning-subtle rounded-3 m-auto round d-flex align-items-center justify-content-center">
+                  <iconify-icon class="fs-7 text-warning" icon="solar:shield-user-bold-duotone">
+                  </iconify-icon>
+                 </div>
+                 <h6 class="mb-0 fs-4">
+                  Profile
+                 </h6>
+                 <span class="d-block text-body-color fs-3">
+                  More information
+                 </span>
+                </a>
+               </div>
+               <div class="col-6">
+                <a class="dropdown-item px-7 py-6 d-flex flex-column gap-2 justify-content-center text-center" href="https://bootstrapdemos.wrappixel.com/spike/dist/main/app-calendar.html">
+                 <div class="bg-success-subtle rounded-3 m-auto round d-flex align-items-center justify-content-center">
+                  <iconify-icon class="fs-7 text-success" icon="solar:calendar-mark-bold-duotone">
+                  </iconify-icon>
+                 </div>
+                 <h6 class="mb-0 fs-4">
+                  Calendar
+                 </h6>
+                 <span class="d-block text-body-color fs-3">
+                  Get dates
+                 </span>
+                </a>
+               </div>
+              </div>
+             </div>
+            </li>
+            <li class="nav-item dropdown">
+             <a aria-expanded="false" class="nav-link position-relative ms-6" href="javascript:void(0)" id="drop1">
+              <div class="d-flex align-items-center flex-shrink-0">
+               <div class="user-profile me-sm-3 me-2">
+                <img alt="spike-img" class="rounded-circle" src="images/user-1.jpg" width="40">
+               </div>
+               <span class="d-sm-none d-block">
+                <iconify-icon icon="solar:alt-arrow-down-line-duotone">
+                </iconify-icon>
+               </span>
+                              <div class="d-none d-sm-block">
+                <h6 class="fs-4 mb-1 profile-name">
+                 Bạn
+                </h6>
+                <p class="fs-3 lh-base mb-0 profile-subtext">
+                 @user
+                </p>
+               </div>
+                             </div>
+             </a>
+             <div aria-labelledby="drop1" class="dropdown-menu content-dd dropdown-menu-end dropdown-menu-animate-up">
+              <div class="profile-dropdown position-relative" data-simplebar="">
+               <div class="d-flex align-items-center mx-7 py-9 border-bottom">
+                <img alt="user" class="rounded-circle" src="images/user-1.jpg" width="90">
+                 <div class="ms-4">
+                  <h4 class="mb-0 fs-5 fw-normal">
+                   Bạn                  </h4>
+                  <p class="text-muted mb-0 mt-1 d-flex align-items-center">
+                   <iconify-icon class="fs-4 me-1" icon="solar:mailbox-line-duotone">
+                   </iconify-icon>
+                   @user                  </p>
+                 </div>
+                
+               
+                </a>
+               </div>
+                             </div>
+             </div>
+            </div></li>
+
+          </ul></div>
+         </div>
+        </nav>
+       </div>
+      </header><title>Kho Mã Nguồn - SHOPLONGHIP12</title>
+          <div class="card shadow-none position-relative overflow-hidden mb-4">
+            <div class="card-body d-flex align-items-center justify-content-between p-4">
+              <h6 class="card-title mb-0">Kho Mã Nguồn</h6>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item">
+                    <a class="text-muted text-decoration-none" href="https://longhip2012.github.io/SourceRoblox">Home</a>
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">Source code</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="card position-relative overflow-hidden">
+            <div class="shop-part col-lg-12">
+              <div class="card-body p-4 pb-0">
+                <div class="d-flex justify-content-between align-items-center gap-6 mb-4">
+                  <a class="btn btn-primary d-lg-none d-flex" href="https://longhip2012.github.io/SourceRoblox">
+                    <iconify-icon class="fs-6 text-white" icon="formkit:arrowleft"></iconify-icon>
+                  </a>
+                 <h5 class="fs-5 mb-0 d-none d-lg-block">Mã Nguồn Hiện Có</h5>
+                </div>
+                <div class="row">
+                                 <div class="col-sm-4 col-xxl-4">
+                    <div class="card hover-img overflow-hidden">
+                      <div class="position-relative">
+                        <a href="https://link4m.com/go/cD9w2vz">
+                          <img src="images/fKN4yj9.png" class="card-img-top" alt="Templates">
+                        </a>
+                      </div>
+                      <div class="card-body pt-3 p-4">
+                        <h6 class="fs-5">Source UI Maru Fake</h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-warning fs-4 me-1" icon="solar:tag-price-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">0<sup>đ</sup></h6>
+                          <p style="text-decoration:line-through;font-size:13px;" class="mb-0">0<sup>đ</sup></p>
+                        </div>
+                        </div>  
+                        <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-primary fs-5 me-1" icon="solar:cart-large-4-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">Đã bán: </h6>
+                          <p style="font-size:13px;" class="mb-0">44</p>
+                        </div>
+                      <button onclick="window.location.href='https://link4m.com/go/cD9w2vz'" type="button" class="float-end justify-content-center btn mb-1 btn-rounded btn-primary d-flex align-items-center">
+                        <iconify-icon class="fs-4 me-2" icon="solar:cart-3-bold"></iconify-icon>
+                        Mua Ngay
+                      </button>                      
+                        </div>
+                      </div>
+                    </div>
+                                   <div class="col-sm-4 col-xxl-4">
+                    <div class="card hover-img overflow-hidden">
+                      <div class="position-relative">
+                        <a href="https://link4m.com/go/vuTTuLqe'">
+                          <img src="images/2fJ8TDR.png" class="card-img-top" alt="Templates">
+                        </a>
+                      </div>
+                      <div class="card-body pt-3 p-4">
+                        <h6 class="fs-5">Ui GetKey PlayBack X</h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-warning fs-4 me-1" icon="solar:tag-price-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">0<sup>đ</sup></h6>
+                          <p style="text-decoration:line-through;font-size:13px;" class="mb-0">0<sup>đ</sup></p>
+                        </div>
+                        </div>  
+                        <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-primary fs-5 me-1" icon="solar:cart-large-4-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">Đã bán: </h6>
+                          <p style="font-size:13px;" class="mb-0">13</p>
+                        </div>
+                      <button onclick="window.location.href='https://link4m.com/go/vuTTuLqe'" type="button" class="float-end justify-content-center btn mb-1 btn-rounded btn-primary d-flex align-items-center">
+                        <iconify-icon class="fs-4 me-2" icon="solar:cart-3-bold"></iconify-icon>
+                        Mua Ngay
+                      </button>                      
+                        </div>
+                      </div>
+                    </div>
+                                   <div class="col-sm-4 col-xxl-4">
+                    <div class="card hover-img overflow-hidden">
+                      <div class="position-relative">
+                        <a href="https://link4m.com/go/uH1Ooqp">
+                          <img src="images/tRrMiB7.png" class="card-img-top" alt="Templates">
+                        </a>
+                      </div>
+                      <div class="card-body pt-3 p-4">
+                        <h6 class="fs-5">Source Alchemy Hub AimBot</h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-warning fs-4 me-1" icon="solar:tag-price-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">0<sup>đ</sup></h6>
+                          <p style="text-decoration:line-through;font-size:13px;" class="mb-0">0<sup>đ</sup></p>
+                        </div>
+                        </div>  
+                        <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-primary fs-5 me-1" icon="solar:cart-large-4-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">Đã bán: </h6>
+                          <p style="font-size:13px;" class="mb-0">29</p>
+                        </div>
+                      <button onclick="window.location.href='https://link4m.com/go/uH1Ooqp'" type="button" class="float-end justify-content-center btn mb-1 btn-rounded btn-primary d-flex align-items-center">
+                        <iconify-icon class="fs-4 me-2" icon="solar:cart-3-bold"></iconify-icon>
+                        Mua Ngay
+                      </button>                      
+                        </div>
+                      </div>
+                    </div>
+                                   <div class="col-sm-4 col-xxl-4">
+                    <div class="card hover-img overflow-hidden">
+                      <div class="position-relative">
+                        <a href="https://link4m.com/go/Mo4LUT">
+                          <img src="images/Q2Jki6P.png" class="card-img-top" alt="Templates">
+                        </a>
+                      </div>
+                      <div class="card-body pt-3 p-4">
+                        <h6 class="fs-5">Source Redz Hub</h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-warning fs-4 me-1" icon="solar:tag-price-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">0<sup>đ</sup></h6>
+                          <p style="text-decoration:line-through;font-size:13px;" class="mb-0">0<sup>đ</sup></p>
+                        </div>
+                        </div>  
+                        <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-primary fs-5 me-1" icon="solar:cart-large-4-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">Đã bán: </h6>
+                          <p style="font-size:13px;" class="mb-0">18</p>
+                        </div>
+                      <button onclick="window.location.href='https://link4m.com/go/Mo4LUT'" type="button" class="float-end justify-content-center btn mb-1 btn-rounded btn-primary d-flex align-items-center">
+                        <iconify-icon class="fs-4 me-2" icon="solar:cart-3-bold"></iconify-icon>
+                        Mua Ngay
+                      </button>                      
+                        </div>
+                      </div>
+                    </div>
+                                   <div class="col-sm-4 col-xxl-4">
+                    <div class="card hover-img overflow-hidden">
+                      <div class="position-relative">
+                        <a href="https://link4m.com/go/sF7ZQz">
+                          <img src="images/lbBS5qf.png" class="card-img-top" alt="Templates">
+                        </a>
+                      </div>
+                      <div class="card-body pt-3 p-4">
+                        <h6 class="fs-5">Source Client Lonely Hub</h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-warning fs-4 me-1" icon="solar:tag-price-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">0<sup>đ</sup></h6>
+                          <p style="text-decoration:line-through;font-size:13px;" class="mb-0">0<sup>đ</sup></p>
+                        </div>
+                        </div>  
+                        <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-primary fs-5 me-1" icon="solar:cart-large-4-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">Đã bán: </h6>
+                          <p style="font-size:13px;" class="mb-0">7</p>
+                        </div>
+                      <button onclick="window.location.href='https://link4m.com/go/sF7ZQz'" type="button" class="float-end justify-content-center btn mb-1 btn-rounded btn-primary d-flex align-items-center">
+                        <iconify-icon class="fs-4 me-2" icon="solar:cart-3-bold"></iconify-icon>
+                        Mua Ngay
+                      </button>                      
+                        </div>
+                      </div>
+                    </div>
+                                   
+                                   <div class="col-sm-4 col-xxl-4">
+                    <div class="card hover-img overflow-hidden">
+                      <div class="position-relative">
+                        <a href="https://link4m.com/go/RbEhxFsw">
+                          <img src="images/banana.png" class="card-img-top" alt="Templates">
+                        </a>
+                      </div>
+                      <div class="card-body pt-3 p-4">
+                        <h6 class="fs-5">Source Click Gui Banana Hub</h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-warning fs-4 me-1" icon="solar:tag-price-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">0<sup>đ</sup></h6>
+                          <p style="text-decoration:line-through;font-size:13px;" class="mb-0">0<sup>đ</sup></p>
+                        </div>
+                        </div>  
+                        <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-primary fs-5 me-1" icon="solar:cart-large-4-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">Đã bán: </h6>
+                          <p style="font-size:13px;" class="mb-0">15</p>
+                        </div>
+                      <button onclick="window.location.href='https://link4m.com/go/RbEhxFsw'" type="button" class="float-end justify-content-center btn mb-1 btn-rounded btn-primary d-flex align-items-center">
+                        <iconify-icon class="fs-4 me-2" icon="solar:cart-3-bold"></iconify-icon>
+                        Mua Ngay
+                      </button>                      
+                        </div>
+                      </div>
+                    </div>
+                                   
+                                   <div class="col-sm-4 col-xxl-4">
+                    <div class="card hover-img overflow-hidden">
+                      <div class="position-relative">
+                        <a href="https://link4m.com/go/OdDfX">
+                          <img src="images/kaitun.png" class="card-img-top" alt="Templates">
+                        </a>
+                      </div>
+                      <div class="card-body pt-3 p-4">
+                        <h6 class="fs-5">Source Ui Kaitun Blox Kid By Nghia Roblox</h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-warning fs-4 me-1" icon="solar:tag-price-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">0<sup>đ</sup></h6>
+                          <p style="text-decoration:line-through;font-size:13px;" class="mb-0">0<sup>đ</sup></p>
+                        </div>
+                        </div>  
+                        <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-primary fs-5 me-1" icon="solar:cart-large-4-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">Đã bán: </h6>
+                          <p style="font-size:13px;" class="mb-0">7</p>
+                        </div>
+                      <button onclick="window.location.href='https://link4m.com/go/OdDfX'" type="button" class="float-end justify-content-center btn mb-1 btn-rounded btn-primary d-flex align-items-center">
+                        <iconify-icon class="fs-4 me-2" icon="solar:cart-3-bold"></iconify-icon>
+                        Mua Ngay
+                      </button>                      
+                        </div>
+                      </div>
+                    </div>
+                    
+                                   <div class="col-sm-4 col-xxl-4">
+                    <div class="card hover-img overflow-hidden">
+                      <div class="position-relative">
+                        <a href="https://link4m.com/go/kIZs1">
+                          <img src="images/5DqIoXX.png" class="card-img-top" alt="Templates">
+                        </a>
+                      </div>
+                      <div class="card-body pt-3 p-4">
+                        <h6 class="fs-5">Source Ui Eta X Hub</h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-warning fs-4 me-1" icon="solar:tag-price-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">0<sup>đ</sup></h6>
+                          <p style="text-decoration:line-through;font-size:13px;" class="mb-0">0<sup>đ</sup></p>
+                        </div>
+                        </div>  
+                        <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-primary fs-5 me-1" icon="solar:cart-large-4-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">Đã bán: </h6>
+                          <p style="font-size:13px;" class="mb-0">3</p>
+                        </div>
+                      <button onclick="window.location.href='https://link4m.com/go/kIZs1'" type="button" class="float-end justify-content-center btn mb-1 btn-rounded btn-primary d-flex align-items-center">
+                        <iconify-icon class="fs-4 me-2" icon="solar:cart-3-bold"></iconify-icon>
+                        Mua Ngay
+                      </button>                      
+                        </div>
+                      </div>
+                    </div>
+                                   <div class="col-sm-4 col-xxl-4">
+                    <div class="card hover-img overflow-hidden">
+                      <div class="position-relative">
+                        <a href="https://link4m.com/go/H87IdEq">
+                          <img src="images/QVMQnZ2.png" class="card-img-top" alt="Templates">
+                        </a>
+                      </div>
+                      <div class="card-body pt-3 p-4">
+                        <h6 class="fs-5">Source Tboy Roblox Blue Lock</h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-warning fs-4 me-1" icon="solar:tag-price-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">0<sup>đ</sup></h6>
+                          <p style="text-decoration:line-through;font-size:13px;" class="mb-0">0<sup>đ</sup></p>
+                        </div>
+                        </div>  
+                        <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-primary fs-5 me-1" icon="solar:cart-large-4-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">Đã bán: </h6>
+                          <p style="font-size:13px;" class="mb-0">9</p>
+                        </div>
+                      <button onclick="window.location.href='https://link4m.com/go/H87IdEq'" type="button" class="float-end justify-content-center btn mb-1 btn-rounded btn-primary d-flex align-items-center">
+                        <iconify-icon class="fs-4 me-2" icon="solar:cart-3-bold"></iconify-icon>
+                        Mua Ngay
+                      </button>                      
+                        </div>
+                      </div>
+                    </div>
+                                   <div class="col-sm-4 col-xxl-4">
+                    <div class="card hover-img overflow-hidden">
+                      <div class="position-relative">
+                        <a href="https://link4m.com/go/VoJwHmjP">
+                          <img src="images/Hu5tRYw.png" class="card-img-top" alt="Templates">
+                        </a>
+                      </div>
+                      <div class="card-body pt-3 p-4">
+                        <h6 class="fs-5">Source Dogki(Rác Skid Min Remake by Tboy)</h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-warning fs-4 me-1" icon="solar:tag-price-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">0<sup>đ</sup></h6>
+                          <p style="text-decoration:line-through;font-size:13px;" class="mb-0">0<sup>đ</sup></p>
+                        </div>
+                        </div>  
+                        <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-primary fs-5 me-1" icon="solar:cart-large-4-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">Đã bán: </h6>
+                          <p style="font-size:13px;" class="mb-0">15</p>
+                        </div>
+                      <button onclick="window.location.href='https://link4m.com/go/VoJwHmjP'" type="button" class="float-end justify-content-center btn mb-1 btn-rounded btn-primary d-flex align-items-center">
+                        <iconify-icon class="fs-4 me-2" icon="solar:cart-3-bold"></iconify-icon>
+                        Mua Ngay
+                      </button>                      
+                        </div>
+                      </div>
+                    </div>
+                 
+                    <div class="col-sm-4 col-xxl-4">
+                    <div class="card hover-img overflow-hidden">
+                      <div class="position-relative">
+                        <a href="https://link4sub.com/kAcO">
+                          <img src="images/applehub.png" class="card-img-top" alt="Templates">
+                        </a>
+                      </div>
+                      <div class="card-body pt-3 p-4">
+                        <h6 class="fs-5">Source Apple Hub English</h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-warning fs-4 me-1" icon="solar:tag-price-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">0<sup>đ</sup></h6>
+                          <p style="text-decoration:line-through;font-size:13px;" class="mb-0">0<sup>đ</sup></p>
+                        </div>
+                        </div>  
+                        <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-primary fs-5 me-1" icon="solar:cart-large-4-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">Đã bán: </h6>
+                          <p style="font-size:13px;" class="mb-0">15</p>
+                        </div>
+                      <button onclick="window.location.href='https://link4sub.com/kAcO'" type="button" class="float-end justify-content-center btn mb-1 btn-rounded btn-primary d-flex align-items-center">
+                        <iconify-icon class="fs-4 me-2" icon="solar:cart-3-bold"></iconify-icon>
+                        Mua Ngay
+                      </button>                      
+                        </div>
+                      </div>
+                    </div>
+                    
+                                       <div class="col-sm-4 col-xxl-4">
+                    <div class="card hover-img overflow-hidden">
+                      <div class="position-relative">
+                        <a href="https://link4m.com/go/bvyXGAO">
+                          <img src="images/tai-xung.png" class="card-img-top" alt="Templates">
+                        </a>
+                      </div>
+                      <div class="card-body pt-3 p-4">
+                        <h6 class="fs-5">Source Delta,Evon,Codex</h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-warning fs-4 me-1" icon="solar:tag-price-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">0<sup>đ</sup></h6>
+                          <p style="text-decoration:line-through;font-size:13px;" class="mb-0">0<sup>đ</sup></p>
+                        </div>
+                        </div>  
+                        <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-primary fs-5 me-1" icon="solar:cart-large-4-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">Đã bán: </h6>
+                          <p style="font-size:13px;" class="mb-0">15</p>
+                        </div>
+                      <button onclick="window.location.href='https://link4m.com/go/bvyXGAO'" type="button" class="float-end justify-content-center btn mb-1 btn-rounded btn-primary d-flex align-items-center">
+                        <iconify-icon class="fs-4 me-2" icon="solar:cart-3-bold"></iconify-icon>
+                        Mua Ngay
+                      </button>                      
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-4 col-xxl-4">
+                    <div class="card hover-img overflow-hidden">
+                      <div class="position-relative">
+                        <a href="https://link4m.com/go/QIWj5N">
+                          <img src="images/teddy.png" class="card-img-top" alt="Templates">
+                        </a>
+                      </div>
+                      <div class="card-body pt-3 p-4">
+                        <h6 class="fs-5">Source HOP (Bonus Fast Attack)</h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-warning fs-4 me-1" icon="solar:tag-price-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">0<sup>đ</sup></h6>
+                          <p style="text-decoration:line-through;font-size:13px;" class="mb-0">0<sup>đ</sup></p>
+                        </div>
+                        </div>  
+                        <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-primary fs-5 me-1" icon="solar:cart-large-4-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">Đã bán: </h6>
+                          <p style="font-size:13px;" class="mb-0">35</p>
+                        </div>
+                      <button onclick="window.location.href='https://link4m.com/go/QIWj5N'" type="button" class="float-end justify-content-center btn mb-1 btn-rounded btn-primary d-flex align-items-center">
+                        <iconify-icon class="fs-4 me-2" icon="solar:cart-3-bold"></iconify-icon>
+                        Mua Ngay
+                      </button>                      
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-4 col-xxl-4">
+                    <div class="card hover-img overflow-hidden">
+                      <div class="position-relative">
+                        <a href="https://link4m.com/go/7TJZl3E">
+                          <img src="images/matsune.png" class="card-img-top" alt="Templates">
+                        </a>
+                      </div>
+                      <div class="card-body pt-3 p-4">
+                        <h6 class="fs-5">Source Matsune + Webhook </h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-warning fs-4 me-1" icon="solar:tag-price-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">0<sup>đ</sup></h6>
+                          <p style="text-decoration:line-through;font-size:13px;" class="mb-0">0<sup>đ</sup></p>
+                        </div>
+                        </div>  
+                        <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-primary fs-5 me-1" icon="solar:cart-large-4-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">Đã bán: </h6>
+                          <p style="font-size:13px;" class="mb-0">15</p>
+                        </div>
+                      <button onclick="window.location.href='https://link4m.com/go/7TJZl3E'" type="button" class="float-end justify-content-center btn mb-1 btn-rounded btn-primary d-flex align-items-center">
+                        <iconify-icon class="fs-4 me-2" icon="solar:cart-3-bold"></iconify-icon>
+                        Mua Ngay
+                      </button>                      
+                        </div>
+                      </div>
+                    </div>
+                    
+                                   <div class="col-sm-4 col-xxl-4">
+                    <div class="card hover-img overflow-hidden">
+                      <div class="position-relative">
+                        <a href="https://link4m.com/go/pBMgAzY">
+                          <img src="images/4niXCPu.png" class="card-img-top" alt="Templates">
+                        </a>
+                      </div>
+                      <div class="card-body pt-3 p-4">
+                        <h6 class="fs-5">Source Main V3 KimP</h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-warning fs-4 me-1" icon="solar:tag-price-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">0<sup>đ</sup></h6>
+                          <p style="text-decoration:line-through;font-size:13px;" class="mb-0">0<sup>đ</sup></p>
+                        </div>
+                        </div>  
+                        <div class="d-flex align-items-center mb-2">
+                         <iconify-icon class="text-primary fs-5 me-1" icon="solar:cart-large-4-bold"></iconify-icon>
+                         <h6 style="font-size:15px" class="mb-0 me-1">Đã bán: </h6>
+                          <p style="font-size:13px;" class="mb-0">10</p>
+                        </div>
+                      <button onclick="window.location.href='https://link4m.com/go/pBMgAzY'" type="button" class="float-end justify-content-center btn mb-1 btn-rounded btn-primary d-flex align-items-center">
+                        <iconify-icon class="fs-4 me-2" icon="solar:cart-3-bold"></iconify-icon>
+                        Mua Ngay
+                      </button>                      
+                        </div>
+                      </div>
+                    </div>
+                                   </div>
+                 
+                </div>
+              </div>
+            </div>
+</div>
+   </div>
+       <div class="dark-transparent sidebartoggler"></div>
+       </div>
+               <div id="responsive-overlay"></div>
+   <script>
+    function handleColorTheme(e) {
+    document.documentElement.setAttribute("data-color-theme", e);
+  }
+   </script>
+  <!-- <button aria-controls="offcanvasExample" class="btn btn-primary p-3 rounded-circle d-flex align-items-center justify-content-center customizer-btn" data-bs-target="#offcanvasExample" data-bs-toggle="offcanvas" type="button">
+    <i class="icon ti ti-settings fs-7">
+    </i>
+   </button> -->
+   <div aria-labelledby="offcanvasExampleLabel" class="offcanvas customizer offcanvas-end" id="offcanvasExample" tabindex="-1">
+    <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
+     <h4 class="offcanvas-title fw-semibold" id="offcanvasExampleLabel">
+      Settings
+     </h4>
+     <button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas" type="button">
+     </button>
+    </div>
+    <div class="offcanvas-body h-n80" data-simplebar="">
+     <h6 class="fw-semibold fs-4 mb-2">
+      Theme
+     </h6>
+     <div class="d-flex flex-row gap-3 customizer-box" role="group">
+      <input autocomplete="off" class="btn-check light-layout" id="light-layout" name="theme-layout" type="radio">
+       <label class="btn p-9 btn-outline-primary" for="light-layout">
+        <iconify-icon class="fs-7 me-2" icon="iconoir:sun-light"></iconify-icon>
+        
+        Light
+       </label>
+       <input autocomplete="off" class="btn-check dark-layout" id="dark-layout" name="theme-layout" type="radio">
+        <label class="btn p-9 btn-outline-primary" for="dark-layout">
+         <iconify-icon class="fs-7 me-2" icon="ph:moon"></iconify-icon>
+         
+         Dark
+        </label>
+       
+      
+     </div>
+     <h6 class="mt-5 fw-semibold fs-4 mb-2">
+      Theme Direction
+     </h6>
+     <div class="d-flex flex-row gap-3 customizer-box" role="group">
+      <input autocomplete="off" class="btn-check" id="ltr-layout" name="direction-l" type="radio">
+       <label class="btn p-9 btn-outline-primary" for="ltr-layout">
+        <iconify-icon class="fs-7 me-2" icon="entypo:align-left"></iconify-icon>
+        
+        LTR
+       </label>
+       <input autocomplete="off" class="btn-check" id="rtl-layout" name="direction-l" type="radio">
+        <label class="btn p-9 btn-outline-primary" for="rtl-layout">
+        <iconify-icon class="fs-7 me-2" icon="entypo:align-right"></iconify-icon>
+         
+         RTL
+        </label>
+       
+      
+     </div>
+     <h6 class="mt-5 fw-semibold fs-4 mb-2">
+      Theme Colors
+     </h6>
+     <div class="d-flex flex-row flex-wrap gap-3 customizer-box color-pallete" role="group">
+      <input autocomplete="off" class="btn-check" id="Blue_Theme" name="color-theme-layout" type="radio">
+       <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center" data-bs-placement="top" data-bs-title="BLUE_THEME" data-bs-toggle="tooltip" for="Blue_Theme" onclick="handleColorTheme('Blue_Theme')">
+        <div class="color-box rounded-circle d-flex align-items-center justify-content-center skin-1">
+          <iconify-icon class="text-white d-flex icon fs-5" icon="material-symbols:check"></iconify-icon>
+         
+        </div>
+       </label>
+       <input autocomplete="off" class="btn-check" id="Aqua_Theme" name="color-theme-layout" type="radio">
+        <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center" data-bs-placement="top" data-bs-title="AQUA_THEME" data-bs-toggle="tooltip" for="Aqua_Theme" onclick="handleColorTheme('Aqua_Theme')">
+         <div class="color-box rounded-circle d-flex align-items-center justify-content-center skin-2">
+          <iconify-icon class="text-white d-flex icon fs-5" icon="material-symbols:check"></iconify-icon>
+          
+         </div>
+        </label>
+        <input autocomplete="off" class="btn-check" id="Purple_Theme" name="color-theme-layout" type="radio">
+        <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center" data-bs-placement="top" data-bs-title="PURPLE_THEME" data-bs-toggle="tooltip" for="Purple_Theme" onclick="handleColorTheme('Purple_Theme')">
+         <div class="color-box rounded-circle d-flex align-items-center justify-content-center skin-3">
+          <iconify-icon class="text-white d-flex icon fs-5" icon="material-symbols:check"></iconify-icon>
+          
+         </div>
+        </label>
+        <input autocomplete="off" class="btn-check" id="green-theme-layout" name="color-theme-layout" type="radio">
+        <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center" data-bs-placement="top" data-bs-title="GREEN_THEME" data-bs-toggle="tooltip" for="green-theme-layout" onclick="handleColorTheme('Green_Theme')">
+         <div class="color-box rounded-circle d-flex align-items-center justify-content-center skin-4">
+          <iconify-icon class="text-white d-flex icon fs-5" icon="material-symbols:check"></iconify-icon>
+          
+         </div>
+        </label>
+        <input autocomplete="off" class="btn-check" id="cyan-theme-layout" name="color-theme-layout" type="radio">
+        <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center" data-bs-placement="top" data-bs-title="CYAN_THEME" data-bs-toggle="tooltip" for="cyan-theme-layout" onclick="handleColorTheme('Cyan_Theme')">
+         <div class="color-box rounded-circle d-flex align-items-center justify-content-center skin-5">
+          <iconify-icon class="text-white d-flex icon fs-5" icon="material-symbols:check"></iconify-icon>
+          
+         </div>
+        </label>
+        <input autocomplete="off" class="btn-check" id="orange-theme-layout" name="color-theme-layout" type="radio">
+        <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center" data-bs-placement="top" data-bs-title="ORANGE_THEME" data-bs-toggle="tooltip" for="orange-theme-layout" onclick="handleColorTheme('Orange_Theme')">
+         <div class="color-box rounded-circle d-flex align-items-center justify-content-center skin-6">
+          <iconify-icon class="text-white d-flex icon fs-5" icon="material-symbols:check"></iconify-icon>
+         </div>
+        </label>
+       
+      
+     </div>
+     <h6 class="mt-5 fw-semibold fs-4 mb-2">
+      Layout Type
+     </h6>
+     <div class="d-flex flex-row gap-3 customizer-box" role="group">
+      <div>
+       <input autocomplete="off" class="btn-check" id="vertical-layout" name="page-layout" type="radio">
+       <label class="btn p-9 btn-outline-primary" for="vertical-layout">
+        <i class="icon ti ti-layout-sidebar-right fs-7 me-2">
+        </i>
+        Vertical
+       </label>
+      </div>
+      <div>
+       <input autocomplete="off" class="btn-check" id="horizontal-layout" name="page-layout" type="radio">
+       <label class="btn p-9 btn-outline-primary" for="horizontal-layout">
+        <i class="icon ti ti-layout-navbar fs-7 me-2">
+        </i>
+        Horizontal
+       </label>
+      </div>
+     </div>
+     <h6 class="mt-5 fw-semibold fs-4 mb-2">
+      Container Option
+     </h6>
+     <div class="d-flex flex-row gap-3 customizer-box" role="group">
+      <input autocomplete="off" class="btn-check" id="boxed-layout" name="layout" type="radio">
+      <label class="btn p-9 btn-outline-primary" for="boxed-layout">
+       <i class="icon ti ti-layout-distribute-vertical fs-7 me-2">
+       </i>
+       Boxed
+      </label>
+      <input autocomplete="off" class="btn-check" id="full-layout" name="layout" type="radio">
+      <label class="btn p-9 btn-outline-primary" for="full-layout">
+       <i class="icon ti ti-layout-distribute-horizontal fs-7 me-2">
+       </i>
+       Full
+      </label>
+     </div>
+     <h6 class="fw-semibold fs-4 mb-2 mt-5">
+      Sidebar Type
+     </h6>
+     <div class="d-flex flex-row gap-3 customizer-box" role="group">
+      <a class="fullsidebar" href="javascript:void(0)">
+       <input autocomplete="off" class="btn-check" id="full-sidebar" name="sidebar-type" type="radio">
+       <label class="btn p-9 btn-outline-primary" for="full-sidebar">
+        <i class="icon ti ti-layout-sidebar-right fs-7 me-2">
+        </i>
+        Full
+       </label>
+      </a>
+      <div>
+       <input autocomplete="off" class="btn-check" id="mini-sidebar" name="sidebar-type" type="radio">
+       <label class="btn p-9 btn-outline-primary" for="mini-sidebar">
+        <i class="icon ti ti-layout-sidebar fs-7 me-2">
+        </i>
+        Collapse
+       </label>
+      </div>
+     </div>
+     <h6 class="mt-5 fw-semibold fs-4 mb-2">
+      Card With
+     </h6>
+     <div class="d-flex flex-row gap-3 customizer-box" role="group">
+      <input autocomplete="off" class="btn-check" id="card-with-border" name="card-layout" type="radio">
+      <label class="btn p-9 btn-outline-primary" for="card-with-border">
+       <i class="icon ti ti-border-outer fs-7 me-2">
+       </i>
+       Border
+      </label>
+      <input autocomplete="off" class="btn-check" id="card-without-border" name="card-layout" type="radio">
+      <label class="btn p-9 btn-outline-primary" for="card-without-border">
+       <i class="icon ti ti-border-none fs-7 me-2">
+       </i>
+       Shadow
+      </label>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="dark-transparent sidebartoggler">
+  </div>
+  <script src="js/vendor.min.js">
+  </script>
+  <!-- Import Js Files -->
+  <script src="js/bootstrap.bundle.min.js">
+  </script>
+  <script src="js/simplebar.min.js">
+  </script>
+  <script src="js/app.init.js">
+  </script>
+  <script src="js/theme.js">
+  </script>
+  <script src="js/app.min.js">
+  </script>
+  <script src="js/sidebarmenu.js">
+  </script>
+  <script src="js/feather.min.js">
+  </script>
+  <!-- solar icons -->
+  <script src="js/iconify-icon.min.js">
+  </script>
+  <script src="js/jquery-jvectormap.min.js">
+  </script>
+  <script src="js/apexcharts.min.js">
+  </script>
+  <script src="js/jquery-jvectormap-us-aea-en.js">
+  </script>
+  <script src="js/dashboard.js">
+  </script>
+ 
+
+</body></html>
